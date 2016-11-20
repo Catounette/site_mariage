@@ -53,8 +53,7 @@ def adresse(request):
     if request.method == "POST":
         form = GuestForm(request.POST)
         if form.is_valid():
-            guest = form.save(commit=False)
-            guest.nom= request.user
+            guest = form.save()
             guest.save()
             envoi=True
     else:
