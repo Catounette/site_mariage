@@ -1,0 +1,22 @@
+<html>
+<body>
+toto
+<div id="map" style="width: 300px; height: 300px;"></div>   
+     <script type="text/javascript">
+        function initMap() {
+          var latlng = {lat:43.184326, lng:-0.270781};
+          var options = {
+            zoom:10,
+            center:latlng,
+            scrollwheel: false,
+            mapTypeId: 'satellite'
+          };
+        // Create a map object and specify the DOM element for display.
+          var map = new google.maps.Map(document.getElementById('map'), options);
+      }
+</script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrrN9IaKvh0jM5An_wwgKfFwNeX0YfIxU&callback=initMap" async defer></script>
+ </body>
+</html>
+   

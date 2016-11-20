@@ -1,0 +1,403 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Archistico';
+    src: url('/static/polices/archistico/Archistico_Simple.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}   
+
+
+@font-face
+{
+    font-family: 'Voltaire';
+    src: url('/static/polices/voltaire/Voltaire-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}   
+
+
+
+/* Eléments principaux de la page */
+
+body
+{
+    font-family: Arial;
+    font-weight: normal;
+    margin:0px;
+    background-color:rgb(255,255,248);
+    
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+    background-color:rgb(255,255,248);
+}
+
+section h1, footer h1
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+}
+/* Header*/ 
+
+header
+{   
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color:rgb(255,255,248);
+    border-bottom: solid;
+    position: fixed;
+    width:900px;
+    padding-top: 3px;
+
+
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#banderole_mariage
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+
+#banderole_mariage img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header h1
+{
+    font-family:  serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    font-family: Voltaire;
+}
+
+header h2
+{
+    font-family: serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    font-family: Voltaire;
+}
+
+
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    padding-bottom: 50px;
+    position:relative
+}
+
+nav ul li
+{
+    margin-right: 15px;
+    font-size: 1em;   
+    font-family: Voltaire;
+}
+
+nav ul li ul 
+{
+    display: none;  
+}
+
+nav a
+{
+    font-size: 1em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-family: Voltaire;
+
+
+}
+
+nav a:hover
+{
+    color: rgb(219,33,101);  
+    border-bottom: 3px solid rgb(219,33,101);
+
+
+}
+
+nav ul li:hover > ul 
+{
+   display: flex;
+   flex-direction: column;
+   padding-top: 1px;
+   position: absolute;
+} 
+
+nav ul li:hover > ul a 
+{
+   margin-top: 10px;
+} 
+
+/* Corps */
+
+
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content:space-around;
+    padding-top: 200px;
+  	
+   
+}
+
+#imgSaveTheDate img
+{
+
+   border:5px solid rgb(219,33,101);
+}
+
+#intro
+{
+    display: flex;
+    flex-direction:row;
+    border-radius: 2px;
+    /*box-shadow: 0px 0px 1px rgb(219,33,101);*/
+    padding:2px;
+    margin: 5px;   
+
+    justify-content: space-between;
+    background-color:rgb(255,255,248);
+}
+
+#intro p
+{
+    text-align: justify;
+    font-size: 0.8em; 
+
+}
+
+
+#intro h1
+{
+    text-align: justify;
+    font-size: 1.8em; 
+    font-weight: bold;
+    color:rgb(219,33,101);
+}
+.elem:nth-child(1)
+{
+    flex:1.5;
+    padding-right: 15px;
+}
+.elem:nth-child(2)
+{
+    flex:1;
+}
+.elem img
+{
+    display:flex;
+    max-height: 100%;
+    max-width: 100%;
+    padding-left: 5px;
+    margin-bottom: -20px;
+
+}
+
+.elem map
+{
+    display:flex;
+    max-height: 100%;
+    max-width: 100%;
+    padding-left: 5px;
+    margin-bottom: -20px;
+
+}
+
+#LiensTrajet
+{
+    display:flex;
+    flex-direction:column;
+}
+.elem p a
+{
+    text-align: justify;
+    font-size: 1.2em; 
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 10px;
+    color:black;
+    font-weight:normal;
+}
+
+#type
+{
+    border-radius: 2px;
+    /*box-shadow: 0px 0px 1px rgb(219,33,101);*/
+    padding:2px;
+    margin: 5px;   
+
+    background-color:rgb(255,255,248);
+}
+#type p
+{
+    text-align: justify;
+    font-size: 0.8em; 
+}
+#type h2
+{
+    text-align: justify;
+    font-size: 1.1em;
+    font-weight: normal;
+    color:rgb(219,33,101);
+
+}
+#type h4
+{
+    text-align: justify; 
+    font-size: 0.8em;  
+    font-weight:normal;
+}
+
+#type h3
+{
+    text-align: justify;
+    font-size: 1em; 
+    padding-top: 10px;
+    color:black;
+    margin-left: 20px;
+    margin-right: 20px;   
+}
+#type h3 a
+{
+    text-align: justify;
+    font-size: 1em; 
+    padding-top: 10px;
+    color:black;
+
+    font-weight:normal;
+}
+
+#type h3 a:hover
+{
+    color:rgb(219,33,101);
+
+}
+#type p
+{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;   
+}
+
+#pageJours23
+{
+    display:flex;
+    flex-direction:column;
+    margin-left:35px;
+    margin-top:20px;
+}
+
+#pageJours23 h1
+{
+    text-align: justify;
+    font-size: 1.2em; 
+    font-weight: bold;
+    color:rgb(219,33,101);  
+    margin-top:40px; 
+}
+#pageJours23 p
+{
+    text-align: justify;
+    font-size: 0.8em;
+    margin-top: -2px;
+    
+}
+#pageJours23 img
+{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#pageVendredi
+{
+    padding-right: 5px
+}
+
+#pageVendredi h1
+{
+    text-align: justify;
+    font-size: 1.2em; 
+    font-weight: bold;
+    color:rgb(219,33,101);   
+}
+#pageVendredi p
+{
+    text-align: justify;
+    font-size: 0.8em;
+    padding-bottom:0px; 
+}
+#PageNounou
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#PageNounou img
+{
+    max-height: 90%;
+    max-width: 90%;
+    padding-left: 80px;
+    margin-bottom: 0px;
+}
+
+#PageNounou h1
+{
+    text-align: justify;
+    font-size: 1.2em; 
+    font-weight: bold;
+    color:rgb(219,33,101); 
+    margin-top: -10px;   
+}
+
+#PageNounou p
+{
+    text-align: justify;
+    font-size: 0.8em;
+    padding-bottom:0px;
+
+}
+
+footer
+{
+    text-align: justify;
+    font-size: 0.8em;
+
+}

@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Adresse{% endblock %}
+{% block article %}
+<div id="intro">
+<div class="elem">
+	<h1>Guest Info</h1>
+{% if envoi %}Merci !
+{% else %}
+<form action="{% url "blog.views.adresse" %}" method="post">
+	<p>Nous avons maintenant besoin de quelques informations.</p>	
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+{% endif %}
+{% endblock %}
+

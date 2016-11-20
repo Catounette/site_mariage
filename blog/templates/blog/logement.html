@@ -1,0 +1,67 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Page Logement{% endblock %}
+{% block article %}
+   <div id="intro">
+      <div class="elem">
+      <h1>Où dormir ?</h1>
+      <p>Voici une petite sélection de chambres d'hôtes, gîtes et Air BnB à quelques minutes du château.</p>
+      <p>Pour les gîtes et Air BnB, nous avons principalement sélectionné des maisons pouvant héberger un grand nombre de personnes. Mais sachez qu'il en existe des plus petits.</p>
+      <p>Nous ésperons que vous trouverez votre bonheur dans cette liste. Mais n'hésitez pas à nous contacter si vous avez besoin d'encore un peu d'aide.</p>
+      </div>
+      <div class="elem">
+         <img src={% static "img/PlaineDeNay.jpg" alt="plaineDeNay" %}/>
+      </div>
+   </div>
+
+   <div id="type">
+      <h2>La tente !</h2>
+      <p>Il est possible de mettre quelques tentes dans le jardin du château, et pas besoin de Sam !</p>
+   </div>
+   <div id="type">
+      <h2>Air BnB</h2>
+      <p>Ils sont nombreux à Nay donc ne les listera pas tous, mais en voici quelques uns:</p>
+      <h3><a href="https://www.airbnb.fr/rooms/3339649?s=svU35Nvp">Maison proximité Pau/Lourdes</a></h3>
+      <p>Une jolie maison avec piscine, tout près du château, pouvant héberger 10 personnes. La location est possible pour un séjour de trois nuits minimum, et il n'y a que des très bons commentaires !</p>
+      <h3><a href="https://www.airbnb.fr/rooms/10846576?s=svU35Nvp">Charming townhouse with pool</a></h3>
+      <p>Grande maison, avec un jardin, piscine, pour 8 voyageurs, dans Nay, donc à quelques minutes à peine du château.</p>
+      <h3><a href="https://www.airbnb.fr/rooms/4004554?s=svU35Nvp">Charme d’une maison béarnaise</a></h3>
+      <p>Toujours dans Nay, une grosse maison béarnaise pour 10 voyageurs.</p>
+   </div>
+      <div id="type">
+      <h2>Gîtes</h2>
+      <h3><a href="https://www.gites-de-france.com/location-vacances-Mirepeix-Gite-Gite-Prat-64G121196.html?deb=13/07/2017&nbj=3&exe=2017">Chez Prat</a></h3>
+      <p>Une superbe maison à quelques minutes du château (6min en voiture, une demi-heure à pied), pouvant hébergée 10 personnes et des bébés. Il y a 6 chambres, terrasses et très grand jardin.</p>
+      <p>Le coût pour ce gîte de France s'élève à 500€ la semaine... soit 50€ chacun si vous êtes à 10... Pas mal non ?</p>
+      <h3><a href="https://www.gites-de-france.com/location-vacances-Coarraze-Gite-Chez-Gaich-64G121100.html">Chez Gaich</a></h3>
+      <p>Un autre gîte, un peu plus petit et légèrement plus loin. Vous pourrez y séjourner à 4 et il vous faudra 10 minutes en voitures pour vous y rendre (ou 1h à pied... en dernier recours. Avec des talons, ça risque d'être plus long :s).  
+   </div>
+   <div id="type">
+      <h2>Chambres d'hôtes</h2>
+      <h3><a href="http://www.chambre-hote-64.com/">Chez Monsieur René Pepin</a></h3>
+      <p>M. Pépin possède 2 chambres d'hôtes, pour deux adultes à Nay (50€/nuit) - 5 min en voiture, 18 min à pied du château. Piscine et lits bébé à disposition.</p>
+      <p>Les réservations se font par internet.</p>
+      <h3><a href="http://tourisme-bearn-paysdenay.com/fr/component/tourinsoft/hebergements/chambres-d-hotes/madame-renee-nessans">Chez Madame Renée Nessans</a></h3>
+      <p>Mme. Nessans possède 5 chambres d'hôtes, pour deux adultes à Nay (40€/nuit) - 5 min en voiture, 11 min à pied du château.</p>
+      <h3><a href="http://www.gites64.com/fiche-64G421049.html">L'enclos Béarnais</a></h3>
+      <p>Trois chambres dans cette grande bâtisse pouvant héberger sept personnes, située à 10 minutes en voiture du château.</p>
+      <p>Ici, il n'y a pas de piscine mais un boulodrome ! Il ne manque plus que le pastis.</p>
+      <p>Le prix des chambres varient entre 75€ et 100€ la nuit.</p>
+      <h3><a href="http://tourisme-bearn-paysdenay.com/fr/component/tourinsoft/hebergements/chambres-d-hotes/madame-marie-claire-gill">Madame Marie-Claire Gill</a></h3>
+      <p>Situé à un quart d'heure en voiture du château, Mme Gill possède 2 chambres pour 5 personnes, à 59€ la nuit.</p>
+      <h3><a href="http://www.chambres-hotes-pyrenees.net/">Chambres d’hôtes Beth Soureilh</a></h3>
+      <p>4 chambres pour 15 personnes, à 25 minutes en voiture</p>
+      <p>Le tarif des chambres doubles varient entre 59€ et 129€. On vous laisse découvrir.</p>
+      <h3><a href="http://domainedesdeuxeaux.fr/gite.html">Domaine des deux eaux</a></h3>
+      <p>A quinze minutes en voiture du château, ce domaine peut héberger jusqu'à 14 personnes.</p>
+      <h3><a href="http://tourisme-bearn-paysdenay.com/fr/sejournez/chambres-hotes">Les autres chambres d'hôtes</a></h3>
+      <p>Enfin, il reste encore quelques chambres d'hôtes un peu plus éloignées que vous pourrez découvrir sur cette page.</p>
+   </div>
+
+
+
+
+
+{% endblock %}
+

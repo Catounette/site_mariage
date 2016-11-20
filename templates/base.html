@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    {% load static %}
+     <link rel="stylesheet" type="text/css" media="all" href={% static "css/styleMH6.css"%}/>
+     <title>{% block title %}Marion & Hugo - Le site Web{% endblock %}</title>
+</head>
+<body>
+  <div id="bloc_page">
+    <header> 
+      <div class="titre_principal">
+        <div id="banderole_mariage">
+          <img src={% static "img/dessinMariesPetit.jpg" alt="banderole mariage" %}/>
+          <h1> Marion & Hugo</h1>  
+        </div>
+        <h2>Vendredi 14 juillet 2017, Château de L'Angladure, Nay</h2>
+      </div>
+      {% block nav %}
+      <nav>
+        <ul>
+          <li><a href="/blog/home">Home</a></li>
+          <li>Info pratiques
+            <ul>
+              <li><a href="/blog/transportEtAcces">Accès</a></li>
+              <li><a href="/blog/logement">Logement</a></li>
+              <li><a href="/blog/nounou">Nounou</a></li>
+            </ul>
+          </li>
+          <li><li><a href="/blog/infoPratiques">Jour J</a></li>
+          <li><a href="/blog/adresse">Adresse</a></li>
+        </ul>
+      </nav>
+      {% endblock %}   
+    </header>
+    <section id="content">
+       {% block content %}
+       <article>
+        {% block article %}
+        {% endblock %}
+      </article>
+       <aside>
+        {% block aside %}
+        {% endblock %}
+       </aside>
+       {% endblock %}
+    </section>
+<footer>&copy; Design by: Catounette cie
+</footer>
+</div>
+</body>
+</html>

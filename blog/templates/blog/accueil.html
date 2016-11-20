@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Ma page d'accueil{% endblock %}
+{% block content %}
+<h1>Bienvenue sur le blog des crêpes bretonnes !</h1>
+
+{% for guest in derniers_guests %}
+    <div class="guest">
+    	<h3>{{ guest.nom }}</h3>
+    	<p>{{ guest.conjoint|truncatewords_html:80 }}</p>
+    	<p>{{ guest.adresse|truncatewords_html:80 }}</p>
+    	<br>
+        
+    </div>
+{% empty %}
+    <p>Aucun article.</p>
+{% endfor %}
+
+
+
+{% endblock %}
+

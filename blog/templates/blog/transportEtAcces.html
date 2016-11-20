@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Page Transports et accès{% endblock %}
+{% block article %}
+   <div id="intro">
+		<div class="elem">
+		   <h1>Transports et accès</h1>
+		   <p> Les Pyrénées ce n'est pas tout près mais ça vaut le détour !</p>
+		   <p>Pour venir, nous vous conseillons de prendre vos billets bien en avance. Le prix des vols et des trains Pau-Paris peuvent être très élevés pendant la période estivale. 
+		   <p/>
+		   <p>Il y a une gare près de Nay (Coarraze) mais elle est peu desservie et assez loin à pied de l'église. Il est donc plus simple d'avoir une voiture.</p>
+		</div>
+		<div class="elem">
+			<div id="map" style="width: 300px; height: 250px;"></div>   
+     		<script type="text/javascript">
+        		function initMap() {
+		         	var latlng = {lat:43.184326, lng:-0.270781};
+		         	var options = {
+			            zoom:10,
+			            center:latlng,
+			            scrollwheel: false,
+			            mapTypeId: 'roadmap'
+		        	};
+		        	
+
+		        // Create a map object and specify the DOM element for display.
+		         	var map = new google.maps.Map(document.getElementById('map'), options);
+		         	var marker = new google.maps.Marker({
+          				position: latlng,
+         				map: map
+        			});
+		      	}
+			</script>
+
+ 			 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrrN9IaKvh0jM5An_wwgKfFwNeX0YfIxU&callback=initMap" async defer></script>
+		</div>
+  </div>
+	<div id="type">
+		<h2>En avion</h2>
+   <p>Le plus simple, ce que nous recommandons: Air-France. On ne fait pas de pub, mais ils ont le monopole dans le coin !</br>Le meilleur tarif pour un aller-retour Pau-Paris est aux alentours de 100€, cela peut monter à 190€, au-delà c'est que vous vous y êtes pris vraiment à la dernière minute !</br>Il y a aussi un aéroport à Lourdes/Tarbes, sinon, Toulouse, Bordeaux ou Biarritz.</p>
+</div>
+<div id="type">
+<h2>En train</h2>
+   <p>Si vous êtes écolos dans l'âme et très patients, la SNCF propose le même trajet en 5h30 minimum, départ Montparnasse. Attention, l'été, les prix peuvent très vite augmenter (200€ l'AR, plein tarif).</p>
+</div>
+<div id="type">
+	<h2>Et pour finir la voiture</h2>
+   <p>A Pau, il y a plusieurs loueurs de voitures à l'aéroport et quelques-uns à la gare.</p>
+   <p>Il est aussi possible de venir directement avec votre voiture, le trajet Pau-Paris doit bien durer 8h... Au choix !</p>
+</div>
+{% endblock %}
+

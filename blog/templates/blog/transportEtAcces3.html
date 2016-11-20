@@ -1,0 +1,35 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Page Transports et accès{% endblock %}
+{% block article %}
+   <div id="intro">
+    <div class="elem">
+       <h1>Transports et accès</h1>
+       <p> Oui, les Pyrénées ce n'est pas tout près... mais ça vaut le détour !</p>
+       <p>Pour venir, nous vous conseillons de prendre vos billets bien en avance. Le prix des Pau-Paris peut être très élevé pendant la période estivale. 
+       <p/>
+       <p>Il n'y a ni gare ni aéroport à Nay. Quoiqu'il arrive, il vous faudra une voiture pour le trajet Lourdes/Nay ou Pau/Nay.</p>
+    </div>
+    <div class="elem">
+      <div id="LiensTrajet">
+            <a href="https://www.google.fr/maps/dir//43.184326,-0.270781/@43.1843299,-0.4108567,11z/data=!4m8!1m7!3m6!1s0x0:0x0!2zNDPCsDExJzAzLjYiTiAwwrAxNicxNC44Ilc!3b1!8m2!3d43.184326!4d-0.270781"><img src={% static "img/Map.jpg" alt="mapNay"} id="googlemap" %}></a>
+      </div>
+    </div>
+  </div>
+  <div id="type">
+    <h2>En avion</h2>
+   <p>Le plus simple, ce que nous recommandons: Air-France</p>
+   <p>Non, non, on ne fait pas de pub, mais ils ont le monopole dans le coin !</br>Le meilleur tarif pour un aller-retour est aux alentours de 100€, cela peut monter à 190€, au-delà c'est que vous vous y êtes pris vraiment à la dernière minute !</br>Il y a aussi un aéroport à Lourdes/Tarbes, sinon, Toulouse, Bordeaux ou Biarritz.</p>
+</div>
+<div id="type">
+<h2>En train</h2>
+   <p>Si vous êtes écolos dans l'âme et très patients, la SNCF propose le même trajet en 5h30 minimum. Attention, l'été, les prix peuvent très vite augmenter (200€ l'AR, plein tarif).</p>
+</div>
+<div id="type">
+  <h2>Et pour finir la voiture</h2>
+   <p>Bon, une fois à Pau... il y a plusieurs loueurs de voitures à l'aéroport et quelques-uns à la gare.</p>
+   <p>Il est aussi possible de venir directement avec votre voiture, le trajet Pau-Paris doit bien durer 8h... Au choix !</p>
+</div>
+{% endblock %}
+

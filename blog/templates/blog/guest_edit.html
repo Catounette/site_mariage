@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Page guest{% endblock %}
+{% block article %}
+
+
+<div id="intro">
+<div class="elem"><h1>Guest Info</h1>	
+</div>
+</div>
+{% if envoi %}Merci !
+{% else %}
+<form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+</form>
+
+{% endif %}
+
+
+
+{% endblock %}
+

@@ -1,0 +1,24 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Ma page d'accueil{% endblock %}
+{% block content %}
+   <div id="pageVendredi">
+   	<h1>Vendredi 14 Juillet: le Mariage !</h1>
+   	<img src={%static "img/egliseNayPanoramique.jpg" al="imgEgliseNay" %}/>
+   	<p>C'est avec beaucoup de bonheur que nous souhaitons partager avec vous cette très importante journée !</p>
+   	<p>Nous nous marirons le vendredi 14 Juillet à Nay, un grand village près de Pau. Vous aurez ainsi tout le reste de ce long week-end pour vous reposez après cette fiesta, mais aussi pour profiter de cette magnifique région. Ce n'est pas tous les jours qu'on descend dans les Pyrénnées, n'est-ce pas ?</p>
+   	<p>Le mariage aura lieu à 16h, à l'église Saint Vincent de Nay.</p>
+   	<p>Le coktail débutera vers 18h, au domaine de l'Angladure, à quelques minutes de l'église, suivi du dîner et de tout le reste de la nuit !</p>
+   </div>
+   <div id="pageJours23">
+	<h1>Samedi 15 Juillet: Brunch</h1>
+	<p>Au château de l'Angladure, après la grasse matinée.</br>L'après-midi, nous prévoirons des activités.</br>Prévoyez maillots de bain et bonnes chaussures, rien n'est encore défini.</p>
+   	<h1>Dimanche 16 Juillet</h1>
+   	<p>Re-brunch (ou bbq ou on verra bien...) pour les plus endurants, suivi d'activités dans la région.</br>Aucun programme n'est encore défini, mais bon... on a le temps !</p>
+   	<img src={%static "img/PetitDej.jpg" atl="imagePetitDej"%}/>
+   </div>
+
+
+{% endblock %}
+
