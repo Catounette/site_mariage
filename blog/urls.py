@@ -16,7 +16,8 @@ urlpatterns = [
     url(r'^tpl$',views.tpl,name='tpl'),
     url(r'^adresse$',views.adresse,name='adresse'),  
     url(r'^addition/(?P<nombre1>\d+)/(?P<nombre2>\d+)/$',views.addition,name='calcul'),
-
+    url(r'^cestmoi$',views.cestmoi,name='cestmoi'),
+    
    
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -28,6 +28,10 @@ def logement(request):
 
     return render(request,'blog/logement.html')
 
+def cestmoi(request):
+
+    return render(request,'blog/cestmoi.html')
+
 def nounou(request):
 
     return render(request,'blog/nounou.html')
