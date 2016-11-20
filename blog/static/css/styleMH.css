@@ -409,3 +409,8 @@ footer
     font-size: 0.8em;
 
 }
+
+footer img
+{
+    border: solid;
+}
