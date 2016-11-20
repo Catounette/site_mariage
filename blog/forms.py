@@ -16,12 +16,15 @@ class ContactForm(forms.Form):
 class GuestForm(forms.ModelForm):
 	class Meta:
 		model = Guest
-		fields = ['nom', 'conjoint','enfants','adresse']
+		fields = ['nom','conjoint','enfants','adresse','vientSure','vientPeut_etre','vientPas']
 		labels = {
             'nom':_('Je suis (*)' ), 
             'conjoint': _('Je viendrai avec:'),
             'enfants':_('et nos enfants'),
             'adresse':_('Notre adresse est (*) '),
+            'vientSure':_('Je viens ! '),
+            'vientPeut_etre':_('Peut-être bien que oui, peut-être bien que non'),
+            'vientPas':('Vraiment désolés, nous avons un emploi du temps de ministre et nous sommes déjà pris'),
             
 
         }
