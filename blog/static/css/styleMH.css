@@ -6,7 +6,7 @@
     src: url('/static/polices/archistico/Archistico_Simple.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}   
+}
 
 
 @font-face
@@ -15,7 +15,7 @@
     src: url('/static/polices/voltaire/Voltaire-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}   
+}
 
 
 
@@ -27,7 +27,7 @@ body
     font-weight: normal;
     margin:0px;
     background-color:rgb(255,255,248);
-    
+
 }
 
 #bloc_page
@@ -42,10 +42,15 @@ section h1, footer h1
     font-family: Dayrom, serif;
     font-weight: normal;
 }
-/* Header*/ 
+
+footer
+{
+    font-style:italic;
+}
+/* Header*/
 
 header
-{   
+{
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -54,8 +59,6 @@ header
     position: fixed;
     width:900px;
     padding-top: 3px;
-
-
 }
 
 #titre_principal
@@ -79,13 +82,22 @@ header
     max-height: 100%;
 }
 
-header h1
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, a
 {
     font-family:  serif;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: normal;
     margin: 0 0 0 10px;
     font-family: Voltaire;
+    color: #181818;
+
+    text-decoration: none;
 }
 
 header h2
@@ -95,6 +107,7 @@ header h2
     margin-top: 0px;
     font-weight: normal;
     font-family: Voltaire;
+    padding-left: 50px;
 }
 
 
@@ -106,20 +119,21 @@ nav ul
     list-style-type: none;
     display: flex;
     flex-direction:row;
-    padding-bottom: 50px;
-    position:relative
+    padding-bottom: 0px;
+    margin-left:-30px;
+    padding-left:-30px;
 }
 
 nav ul li
 {
     margin-right: 15px;
-    font-size: 1em;   
+    font-size: 1em;
     font-family: Voltaire;
 }
 
-nav ul li ul 
+nav ul li ul
 {
-    display: none;  
+    display: none;
 }
 
 nav a
@@ -135,24 +149,24 @@ nav a
 
 nav a:hover
 {
-    color: rgb(219,33,101);  
+    color: rgb(219,33,101);
     border-bottom: 3px solid rgb(219,33,101);
 
 
 }
 
-nav ul li:hover > ul 
+nav ul li:hover > ul
 {
    display: flex;
    flex-direction: column;
    padding-top: 1px;
    position: absolute;
-} 
+}
 
-nav ul li:hover > ul a 
+nav ul li:hover > ul a
 {
    margin-top: 10px;
-} 
+}
 
 /* Corps */
 
@@ -164,8 +178,8 @@ section
     margin-bottom: 20px;
     justify-content:space-around;
     padding-top: 200px;
-  	
-   
+
+
 }
 
 #imgSaveTheDate img
@@ -181,7 +195,7 @@ section
     border-radius: 2px;
     /*box-shadow: 0px 0px 1px rgb(219,33,101);*/
     padding:2px;
-    margin: 5px;   
+    margin: 5px;
 
     justify-content: space-between;
     background-color:rgb(255,255,248);
@@ -190,7 +204,7 @@ section
 #intro p
 {
     text-align: justify;
-    font-size: 0.8em; 
+    font-size: 0.8em;
 
 }
 
@@ -198,7 +212,7 @@ section
 #intro h1
 {
     text-align: justify;
-    font-size: 1.8em; 
+    font-size: 1.8em;
     font-weight: bold;
     color:rgb(219,33,101);
 }
@@ -239,7 +253,7 @@ section
 .elem p a
 {
     text-align: justify;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     margin-top: 30px;
     padding-top: 30px;
     margin-left: 10px;
@@ -252,14 +266,14 @@ section
     border-radius: 2px;
     /*box-shadow: 0px 0px 1px rgb(219,33,101);*/
     padding:2px;
-    margin: 5px;   
+    margin: 5px;
 
     background-color:rgb(255,255,248);
 }
 #type p
 {
     text-align: justify;
-    font-size: 0.8em; 
+    font-size: 0.8em;
 }
 #type h2
 {
@@ -271,24 +285,24 @@ section
 }
 #type h4
 {
-    text-align: justify; 
-    font-size: 0.8em;  
+    text-align: justify;
+    font-size: 0.8em;
     font-weight:normal;
 }
 
 #type h3
 {
     text-align: justify;
-    font-size: 1em; 
+    font-size: 1em;
     padding-top: 10px;
     color:black;
     margin-left: 20px;
-    margin-right: 20px;   
+    margin-right: 20px;
 }
 #type h3 a
 {
     text-align: justify;
-    font-size: 1em; 
+    font-size: 1em;
     padding-top: 10px;
     color:black;
 
@@ -304,7 +318,7 @@ section
 {
     text-align: justify;
     margin-left: 20px;
-    margin-right: 20px;   
+    margin-right: 20px;
 }
 
 #pageJours23
@@ -318,17 +332,17 @@ section
 #pageJours23 h1
 {
     text-align: justify;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     font-weight: bold;
-    color:rgb(219,33,101);  
-    margin-top:40px; 
+    color:rgb(219,33,101);
+    margin-top:40px;
 }
 #pageJours23 p
 {
     text-align: justify;
     font-size: 0.8em;
     margin-top: -2px;
-    
+
 }
 #pageJours23 img
 {
@@ -346,15 +360,15 @@ section
 #pageVendredi h1
 {
     text-align: justify;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     font-weight: bold;
-    color:rgb(219,33,101);   
+    color:rgb(219,33,101);
 }
 #pageVendredi p
 {
     text-align: justify;
     font-size: 0.8em;
-    padding-bottom:0px; 
+    padding-bottom:0px;
 }
 #PageNounou
 {
@@ -375,10 +389,10 @@ section
 #PageNounou h1
 {
     text-align: justify;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     font-weight: bold;
-    color:rgb(219,33,101); 
-    margin-top: -10px;   
+    color:rgb(219,33,101);
+    margin-top: -10px;
 }
 
 #PageNounou p
@@ -386,5 +400,12 @@ section
     text-align: justify;
     font-size: 0.8em;
     padding-bottom:0px;
+
+}
+
+footer
+{
+    text-align: justify;
+    font-size: 0.8em;
 
 }
