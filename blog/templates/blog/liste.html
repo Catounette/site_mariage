@@ -1,17 +1,16 @@
 
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Page Nounou{% endblock %}
+{% block title %}Page Liste{% endblock %}
 {% block article %}
 <div id="PageListe">
-
-<div class="Listelem">
-   <h1>Liste Mariage</h1>
-   <p>Une urne sera mise à disposition le soir du mariage, mais pour les fans d'Internet, c'est par <a href="http://www.millemercismariage.com/marionandhugo/liste.html">ici</a> ! </p> 
-   </div>
-   <div class="ListeElem">
-	<img src={% static "img/MerciListe.png" alt="imageListe" %}/>
+	<div class="Listelem">
+   		<h1>Liste Mariage</h1>
+   		<p>Une urne sera mise à disposition le soir du mariage, mais pour les fans d'Internet, c'est par <a href="http://www.millemercismariage.com/marionandhugo/liste.html">ici</a> ! </p> 
+	</div>
+	<div class="ListeElem">
+		<img src={% static "img/MerciListe.png" alt="imageListe" %}/>
+	</div>
 </div>
-   </div>
 {% endblock %}
 
