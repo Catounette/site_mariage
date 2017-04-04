@@ -402,6 +402,7 @@ section
     padding-bottom:0px;
 
 }
+
 #PageListe
 {
     display: flex;
@@ -456,4 +457,12 @@ footer
     font-size: 0.8em;
 
 }
-
+.elemAdresse img
+{
+    display:flex;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
