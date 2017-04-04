@@ -403,6 +403,54 @@ section
 
 }
 
+#PageListe
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#PageListe img
+{
+    max-height: 90%;
+    max-width: 90%;
+    padding-left: 80px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-top:-10px;
+}
+
+#PageListe h1
+{
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:rgb(219,33,101);
+    margin-top: 50px;
+    margin-left: 135px;
+}
+
+#PageListe p
+{
+    text-align: justify;
+    font-size: 0.8em;
+    padding-bottom:0px;
+    margin-left: 135px;
+
+}
+
+#PageListe p a
+{
+    font-size: 1.5em;
+
+}
+
+#PageListe p a:hover
+{
+    color:rgb(219,33,101);
+
+}
 footer
 {
     text-align: justify;

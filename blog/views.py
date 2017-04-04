@@ -36,6 +36,11 @@ def nounou(request):
 
     return render(request,'blog/nounou.html')
 
+def liste(request):
+
+    return render(request,'blog/liste.html')
+
+
 def accueil(request):
     """ Afficher tous les articles de notre blog """
     guests = Guest.objects.all() # Nous sélectionnons tous nos articles

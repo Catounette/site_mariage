@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^transportEtAcces$', views.transportEtAcces,name='acces'),
     url(r'^logement$', views.logement,name='logement'),
     url(r'^nounou$', views.nounou,name='nounou'),
+    url(r'^liste$',views.liste,name='liste'),
     url(r'^tpl$',views.tpl,name='tpl'),
     url(r'^adresse$',views.adresse,name='adresse'),  
     url(r'^addition/(?P<nombre1>\d+)/(?P<nombre2>\d+)/$',views.addition,name='calcul'),
